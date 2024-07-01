@@ -1,0 +1,8 @@
+*.tgz
+*.log
+*.pkl
+*.pyc
+*.requestcache
+*projects/
+*/inputs/
+*/crab*step*/
