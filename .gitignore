@@ -5,4 +5,5 @@
 *.requestcache
 *projects/
 */inputs/
+*/results/
 */crab*step*/
