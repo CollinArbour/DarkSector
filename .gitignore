@@ -4,6 +4,4 @@
 *.pyc
 *.requestcache
 *projects/
-*/inputs/
-*/results/
-*/crab*step*/
+**/crab*step*/
