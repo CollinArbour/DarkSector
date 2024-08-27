@@ -9,9 +9,9 @@ config.General.workArea = 'crab_projects'
 
 config.section_('JobType')
 config.JobType.pluginName = 'Analysis'
-config.JobType.psetName = 'Hadronizer_TuneCUETP8M1_13TeV_generic_LHE_pythia8_cff_py_GEN_SIM.py'
+config.JobType.psetName = 'step1.py'
 config.JobType.maxMemoryMB = 10000
-config.JobType.numCores=4
+config.JobType.numCores=8
 
 config.section_('Data')
 config.Data.splitting = 'FileBased'
@@ -21,7 +21,7 @@ config.Data.inputDBS = 'phys03'
 config.Data.outLFNDirBase = '/store/user/carbour/mc/NMSSM/m0p5/'
 config.Data.publication = True
 
-config.Data.inputDataset = '/CRAB_PrivateMC/carbour-mALP_0p5_mUFO_step0-3f22eb42fbc8c953391827da6f10333b/USER'
+config.Data.inputDataset = '/CRAB_PrivateMC/carbour-NMSSM_m0p5_step0-ee18b858813a9051a89a1b5997e11fd7/USER'
 
 config.section_('Site')
 config.Site.storageSite = 'T2_CH_CERN'
