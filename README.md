@@ -2,8 +2,8 @@ This is a repository dedicated to producing Monte Carlo samples for NMSSM and AL
 
 # Installation
 ```
-cmsrel CMSSW_14_0_15
-cd CMSSW_14_0_15/src
+cmsrel CMSSW_12_4_11_patch3
+cd CMSSW_12_4_11_patch3
 cmsenv
 scram b -j 8
 ```
