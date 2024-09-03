@@ -15,7 +15,7 @@ config.JobType.inputFiles = ['mUFO_ALP_m{mMassPoint}_events.lhe']
 
 config.section_('Data')
 config.Data.splitting = 'EventBased'
-config.Data.unitsPerJob = 100
+config.Data.unitsPerJob = 250
 config.Data.totalUnits = 10000
 config.Data.publication = True
 config.Data.outputDatasetTag = 'mUFO_ALP_m{mMassPoint}_step0'

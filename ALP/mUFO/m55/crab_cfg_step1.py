@@ -22,7 +22,7 @@ config.Data.outLFNDirBase = '/store/user/carbour/mc/alp/mUFO/m55/'
 config.Data.publication = True
 
 #config.Data.inputDataset = '/CRAB_PrivateMC/carbour-mALP_0p5_mUFO_step0-3f22eb42fbc8c953391827da6f10333b/USER'
-config.Data.inputDataset = ''
+config.Data.inputDataset = '/CRAB_PrivateMC/carbour-mUFO_ALP_m55_step0-3f22eb42fbc8c953391827da6f10333b/USER'
 
 config.section_('Site')
 config.Site.storageSite = 'T2_CH_CERN'

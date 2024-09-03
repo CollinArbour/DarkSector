@@ -21,7 +21,7 @@ config.Data.inputDBS = 'phys03'
 config.Data.outLFNDirBase = '/store/user/carbour/mc/alp/mUFO/m{mMassPoint}/'
 config.Data.publication = True
 #config.Data.inputDataset = '/CRAB_PrivateMC/carbour-mALP_30_mUFO_step1-a4e0eb2292c6c18080b9bf7f1017caf8/USER'
-config.Data.inputDataset = ''
+config.Data.inputDataset = {mPrevDB}
 
 config.section_('Site')
 config.Site.storageSite = 'T2_CH_CERN'
