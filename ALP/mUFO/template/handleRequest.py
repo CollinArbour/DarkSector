@@ -124,18 +124,8 @@ if __name__ == '__main__':
 
     #mMasses = [57.5,5,15,35,40,45,62]
 
-    #mMasses = [55]
-    #mMasses = [57.5] # <- Had to resubmit some jobs (Step2)
-    mMasses = [62]
-    stepThrough(mMasses,'step3')
-    #checkStatus(mMasses,'step3')
-
-    #mMasses = [15,35,45]
-    #stepThrough(mMasses,'step4')
-    #checkStatus(mMasses,'step4')
-
-    #mMasses = [5,40,62] # <- Some jobs are missing for some reason (Step2)
+    mMasses = [0.5]
+    stepThrough(mMasses,'step1_NONE')
+    checkStatus(mMasses,'step4')
 
     #Unpack(mMasses)
-
-    #checkStatus(mMasses,'step2')
