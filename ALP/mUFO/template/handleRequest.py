@@ -53,6 +53,8 @@ def runCMSDriver(mass,step):
         os.system(f'./driverCmds/digi_hlt.sh ../m{mass}/ {mass}')
     elif step == 'step3':
         os.system(f'./driverCmds/reco.sh ../m{mass}/ {mass}')
+    elif step == 'step4':
+        os.system(f'./driverCmds/miniAOD.sh ../m{mass}/ {mass}')
 
 def findDB(mass,step):
     if step == 'step1':
@@ -61,6 +63,8 @@ def findDB(mass,step):
         os.system(f'crab status -d ../m{mass}/crab_projects/crab_mUFO_ALP_m{mass}_step1 >> ./temp_status.txt')
     elif step == 'step3':
         os.system(f'crab status -d ../m{mass}/crab_projects/crab_mUFO_ALP_m{mass}_step2 >> ./temp_status.txt')
+    elif step == 'step4':
+        os.system(f'crab status -d ../m{mass}/crab_projects/crab_mUFO_ALP_m{mass}_step3 >> ./temp_status.txt')
 
 def parseDB():
     with open('./temp_status.txt','r') as fl:
@@ -121,39 +125,17 @@ if __name__ == '__main__':
     #mMasses = [57.5,5,15,35,40,45,62]
 
     #mMasses = [55]
-    #stepThrough(mMasses,'step2')
+    #mMasses = [57.5] # <- Had to resubmit some jobs (Step2)
+    mMasses = [62]
+    stepThrough(mMasses,'step3')
+    #checkStatus(mMasses,'step3')
 
-    mMasses = [15,35,45]
-    #stepThrough(mMasses,'step3')
-    checkStatus(mMasses,'step3')
+    #mMasses = [15,35,45]
+    #stepThrough(mMasses,'step4')
+    #checkStatus(mMasses,'step4')
 
     #mMasses = [5,40,62] # <- Some jobs are missing for some reason (Step2)
-    #mMasses = [57.5] # <- Had to resubmit some jobs (Step2)
 
     #Unpack(mMasses)
 
     #checkStatus(mMasses,'step2')
-
-    
-
-
-
-    ## Most Important Parameters
-    #mMass = 55
-    #mMassPoint = convertMass(mMass)
-
-    #step = 'step1'
-
-    # Find previous database
-    #findDB(mMassPoint,step)
-    #prevDB = parseDB()
-
-    # Produce the crab congiuration shell
-    #mtxt = loadStepTemplate(step)
-    #mtxt_proc = procMP(mMassPoint,mtxt,prevDB)
-    #store(mMassPoint,step,mtxt_proc)
-
-    # Run cmsDriver.py
-    #runCMSDriver(mMassPoint,step)
-
-    #execute(mMassPoint,step)
