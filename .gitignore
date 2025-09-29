@@ -5,3 +5,4 @@
 *.requestcache
 *projects/
 **/crab*step*/
+**/archive/
