@@ -10,7 +10,7 @@ config.General.workArea = 'crab_projects'
 config.section_('JobType')
 config.JobType.pluginName = 'Analysis'
 config.JobType.psetName = 'Hadronizer_TuneCUETP8M1_13TeV_generic_LHE_pythia8_cff_py_GEN_SIM.py'
-config.JobType.maxMemoryMB = 10000
+config.JobType.maxMemoryMB = 7500
 config.JobType.numCores=4
 
 config.section_('Data')
